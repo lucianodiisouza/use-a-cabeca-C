@@ -8,6 +8,8 @@ int main() {
 
     int val = 0;
 
+    int counter = 0;
+
     if(card_name[0] == 'K') {
         val = 10;
     } else if(card_name[0] == 'Q') {
@@ -18,6 +20,12 @@ int main() {
         val = 11;
     } else {
         val = atoi(card_name);
+    }
+
+    if(card_name[0] >= 3 || card_name[0] <= 6) {
+        puts("Count has gone up");
+    } else if(card_name[0] == 'K' || card_name[0] == 'Q' || card_name[0] == 'J' || card_name[0] == 10 ) {
+        puts ("Count has gone down");
     }
 
     printf("The card value is: %i\n", val);
