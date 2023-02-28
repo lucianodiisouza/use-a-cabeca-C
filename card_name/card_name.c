@@ -22,9 +22,9 @@ int main() {
         val = atoi(card_name);
     }
 
-    if(card_name[0] >= 3 || card_name[0] <= 6) {
+    if(val >= 3 || val <= 6) {
         puts("Count has gone up");
-    } else if(card_name[0] == 'K' || card_name[0] == 'Q' || card_name[0] == 'J' || card_name[0] == 10 ) {
+    } else if( val == 10) {
         puts ("Count has gone down");
     }
 
